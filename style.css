@@ -6,57 +6,57 @@
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
-nav{
-    position: absolute;
-    width: 100vw;
-    background-color: black;
-    color: white;
-    z-index: 1;
-}
-nav li{
-    position: absolute;
-    text-decoration: none;
-}
+
 .container{
-position: relative;
+display: flex;
+flex-direction: column;
+width: 100vw;
 }
 
-.container>img{
+.container1{
+    margin-top: -57px;
+    /* z-index: 1; */
+}
+.container1>img{
 width: 100%;
 height: 600px;
 /* position: absolute; */
 }
-.container .homeh1{
-    margin-top: -299px;
+ .homeh1{
+    margin-top: -310px;
     color: aliceblue;
     margin-left: 22px ;
     font-size: 60px;
     /* position: absolute; */
 }
-.container .homep{
+.container1 .homep{
     color: aliceblue;
     margin-left: 22px;
     font-size: 18px;
     /* position: absolute; */
 }
-button{
+.container1 button{
     background-color: green;
     color: white;
     margin-left: 22px;
-    font-size: 20px;
-    border: 5px solid green;
+    border: 2px solid green;
     border-radius: 5px;
+    width: 120px;
+    cursor: pointer;
 }
 .main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1247px;
+    /* width: 1247px; */
+    width: 100%;
     text-align: center;
+   margin-top: 34px;
+   color: white;
    
 }
 .main .child{
-    height: 400px;
+    height: 300px;
     width: 25%;
     background-color: green;
     border: 1px solid green;
@@ -64,9 +64,358 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 .png{
     height: 60px;
     width: 60px;
     
+}
+.container2{
+    text-align: center;
+    padding: 35px;
+    height: 600px;
+    background-color: whitesmoke;
+
+}
+.container2 .subheading{
+    display: inline-block;
+    margin-bottom: 0;
+    color: #24A148;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+.container2 .subheading::before{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container2 .subheading::after{
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+#carouselExampleIndicators{
+    height: 400px;
+    width: 400px;
+    background-color: blanchedalmond;
+    text-align: left;
+    left: 30%;
+    top: 10%;
+}
+.container2 .carousel-inner{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+}
+.container2 .carousel-inner img{
+    width: 400px;
+    height: 250px;
+}
+.container2 .carousel-inner h3{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.container2 .carousel-inner p{
+    color: grey;
+    margin-left: 10px;
+}
+.container3{
+    background-color: whitesmoke;
+    text-align: center;
+    height: 600px;
+}
+.container3 .subheading{
+    display: inline-block;
+    margin-bottom: 0;
+    color: #24A148;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+.container3 .subheading::before{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container3 .subheading::after{
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container3 .viewProp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+ .prop{
+    height: 400px;
+    width: 33.33%;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.container3 .viewProp .prop img{
+    width: 360px;
+    height: 450px;
+}
+ .b1{
+    font-size: 20px;
+    margin-top: -240px;
+    margin-left: -30px;
+    background-color: whitesmoke;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.b1:hover{
+    background-color: green;
+    color: white;
+}
+
+.b2{
+    font-size: 12px;
+    /* margin-left: -100px; */
+    margin-top: -150px;
+    background-color: whitesmoke;
+    color: green;
+    border: 1px solod green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.b2:hover{
+    background-color: green;
+    color: white;
+}
+.container4{
+    height: 600px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+.container4 .subheading{
+    display: inline-block;
+    margin-bottom: 0;
+    color: #24A148;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+.container4 .subheading::before{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container4 .subheading::after{
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container4 .mainContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px;
+}
+.container4 .mainContent .content{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    
+}
+.container4 .mainContent .content .circle{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    border-radius: 50%;
+    margin-left: 25%;
+   
+}
+.container4 .mainContent .content .circle span{
+    font-size: 25px;
+}
+.container5{
+    height: 600px;
+    background-color: white;
+    color: black;
+    padding: 25px;
+}
+.container5 .fam{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container5 .fam .fam1{
+    width: 50%;
+    padding: 10px;
+}
+.container5 .fam .fam2{
+    width: 25%;
+}
+.container5 .fam .fam2 img{
+    width: 250px; 
+    height: 400px;
+}
+.container5 .number{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container5 .number .digit{
+    width: 25%;
+    color: green;
+    font-size: 35px;
+    padding: 20px;
+}
+.container5 .number .digit span{
+    font-size: 15px;
+    color: grey;
+   
+}
+/* .container5 .number .digit hr{
+    width: 1px;
+    height: 155px;
+    color: black;
+    z-index: 1;
+} */
+.container6{
+    height: 800px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 70px;
+}
+.container6 .subheading{
+    display: inline-block;
+    margin-bottom: 0;
+    color: #24A148;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+.container6 .subheading::before{
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container6 .subheading::after{
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    content: '';
+    width: 50px;
+    height: 1px;
+    margin-top: -1px;
+    background: #24A148;
+}
+.container6 .clients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 25px;
+}
+.container6 .clients .happyClients{
+    width: 30%;
+    height: 250px;
+    background-color: white;
+    margin-left: 15px;
+}
+.container6 .clients .happyClients .clinentPic1{
+width: 30%;
+margin-top: 5%;
+
+}
+.container6 .clients .happyClients .clientPic2{
+ margin-left: 25%;
+ margin-top: -20%;
+}
+.container7{
+    height: 500px;
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+.container7 .list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container7 .list .details{
+width: 20%;
+}
+.container7 .list .details h3{
+    font-size: 20px;
+}
+.container7 .list .details p, .com{
+    color: grey;
+    font-size: 14px;
+    /* padding: 50px; */
+}
+footer{
+    height: 100px;
+    background-color: black;
+    color: grey;
+    text-align: center;
+    margin: 80px;
+}
+footer .footerP{
+    padding: 60px;
+    font-size: 15px;
 }

@@ -1,25 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"/> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment2</title>
+    <style media="screen">
+      .carousel-cell {
+        width: 100%;
+        }
+        .carousel-cell:before {
+          display: block;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;">
         <a class="navbar-brand" href="#">BHK Reality</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <ul class="navbar-nav ml-auto mr-5" >
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -28,41 +54,495 @@
               <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+              <a class="nav-link" href="#">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
           </ul>
-          
         </div>
       </nav>
-        
-    <div class="container">
-        <img src="./main.jfif" alt="home">
-        <h1 class="homeh1">Find Perfect House <br> From Your Area</h1>
-        <p class="homep">From as low as $20 A small river named Duden flows by their place and supplies it with <br> the necessary regelialia.</p>
+      <div class="container1">
+        <img src="./main.jfif" alt="home" />
+        <h1 class="homeh1">
+          Find Perfect House <br />
+          From Your Area
+        </h1>
+        <p class="homep">
+          From as low as $20 A small river named Duden flows by their place and
+          supplies it with <br />
+          the necessary regelialia.
+        </p>
         <button id="button">View all properties</button>
-    </div>
-    <div class="main">
+      </div>
+      <div class="main">
         <div class="child">
-            <img src="./person.png" alt="person" class="png">
-            <h3>Trusted by Thousands</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <img src="./person.png" alt="person" class="png" />
+          <h3>Trusted by Thousands</h3>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
         </div>
         <div class="child">
-        <img src="./house.png" alt="house" class="png">
-        <h3>Wide Range of Properties</h3>
-        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    </div>
-        <div class="child">
-            <img src="./graph.png" alt="chart" class="png">
-            <h3>Financing Made Easy</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <img src="./house.png" alt="house" class="png" />
+          <h3>Wide Range of Properties</h3>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
         </div>
         <div class="child">
-            <img src="./city.png" alt="city" class="png">
-            <h3>Locked in Pricing</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <img src="./graph.png" alt="chart" class="png" />
+          <h3>Financing Made Easy</h3>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+        <div class="child">
+          <img src="./city.png" alt="city" class="png" />
+          <h3>
+            Locked in <br />
+            Pricing
+          </h3>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia.
+          </p>
+        </div>
+      </div>
+      <div class="container2">
+        <span class="subheading">
+          "What We Offer"
+        </span>
+        <h2 style="font-weight: bold; font-size: 3.7rem;">Featured Properties</h2>
+        <div class="carousel" data-flickity='{ "groupCells": true }'>
+            <div class="carousel-cell ">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./outlook.jfif" alt="First slide">
+              </a>
+           <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+            <p>John Dorf
+            <span style="float: right;">2 weeks ago</span>
+            </p>
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./pool.jfif" alt="Second slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+              <p>Oakland</p>
+              <hr>
+              
+               <p>John Dorf
+                <span style="float: right;">2 weeks ago</span>
+                </p>
+              
+            </div>
+    
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./living.jfif" alt="Third slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+              <p>Oakland</p>
+              <hr>
+               <p>John Dorf
+                <span style="float: right;">2 weeks ago</span>
+                </p>
+             
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+            <img class="d-block w-100" src="./kitchen.jfif" alt="First slide">
+              </a>
+            <h3>The Blue Sky Home</h3>
+            <p>Oakland</p>
+            <hr>
+           
+             <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+            
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./bed.jfif" alt="Second slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+              <p>Oakland</p>
+              <hr>
+              
+               <p>John Dorf
+                <span style="float: right;">2 weeks ago</span>
+                </p>
+           
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./liv2.jfif" alt="Third slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+          
+            
+            <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+            <img class="d-block w-100" src="./liv3.jfif" alt="First slide">
+            </a>
+            <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+         
+           
+            <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+           
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./liv4.jfif" alt="Second slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+          
+            
+            <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+          
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./view.jfif" alt="Third slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+             <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+           
+            </div>
+            <div class="carousel-cell">
+              <a href="#" target="_blank">
+              <img class="d-block w-100" src="./vintage.jfif" alt="First slide">
+              </a>
+              <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+          
+            <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+              </div>
+              <div class="carousel-cell">
+                <a href="#" target="_blank">
+                <img class="d-block w-100" src="./property.jfif" alt="Second slide">
+                </a>
+                <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+           <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+              </div>
+              <div class="carousel-cell">
+                <a href="#" target="_blank">
+                <img class="d-block w-100" src="./sofa.jfif" alt="Third slide">
+                </a>
+                <h3>The Blue Sky Home</h3>
+           <p>Oakland</p>
+           <hr>
+            <p>John Dorf
+              <span style="float: right;">2 weeks ago</span>
+              </p>
+              </div>
+            </div>
+          </div>
+      
+
+        <div class="container3">
+          <span class="subheading">
+            "Properties"
+          </span>
+          <h2 style="font-weight: bold; font-size: 3.7rem;">Properties for this Cities</h2>
+          <div class="viewProp">
+          <div class="prop">
+            <img src="./prop1.jfif" alt="prop1" />
+           <h3><span class="s1"> Miami</span></h3>
+           <h3 ><span class="s2">24 Properties</span></h3>
+          </div>
+          <div class="prop">
+            <img src="./prop2.jfif" alt="prop1"  />
+            <h3 ><span class="s1">Chicago</span></h3>
+            <h3 ><span class="s2">14 Properties</span></h3>
+          </div>
+          <div class="prop">
+            <img src="./prop3.jfif" alt="prop1"/> 
+            <h3 ><span class="s1">India</span></h3>
+            <h3 ><span class="s2">21 Properties</span></h3>
+          </div>
+          </div>
+      </div>
+<div class="container4">
+  <span class="subheading">
+    "Work Flow"
+  </span>
+  <h2 style="font-weight: bold; font-size: 3.7rem;">How it Works</h2>
+  <div class="mainContent">
+  <div class="content">
+    <div class="circle"><span >01</span></div>
+    <h3>Evaluate Property</h3>
+    <p style="color: grey; font-size: 1.6rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+  </div>
+  <div class="content">
+    <div class="circle"><span>02</span></div>
+    <h3>Evaluate Property</h3>
+    <p style="color: grey; font-size: 1.6rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+  </div>
+  <div class="content">
+    <div class="circle"><span>03</span></div>
+    <h3>Evaluate Property</h3>
+    <p style="color: grey; font-size: 1.6rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+  </div>
+  <div class="content">
+    <div class="circle"><span>04</span></div>
+    <h3>Evaluate Property</h3>
+    <p style="color: grey; font-size: 1.6rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+  </div>
+</div>
+</div>
+<div class="container5">
+  <div class="fam">
+    <div class="fam1">
+      <h1 style="font-size: 4rem;">BHK Reality Real Estate</h1>
+      <p style="color: grey; font-size: 1.8rem;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+          <br>
+        On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+    </div>
+      <div class="fam2">
+      <img src="./fam1.jfif" alt="family">
+      </div>
+      <div class="fam2">
+      <img src="./fam2.jfif" alt="family2" >
+      </div>
+  </div>
+  <div class="number">
+    <div class="digit">1,000
+      <span>Area Population</span>
+     
+    </div>
+    <hr>
+    <div class="digit">2,500
+      <span>Total Properties</span>
+      
+    </div>
+    <hr>
+    <div class="digit">500
+      <span>Average House</span>
+      
+    </div>
+    <hr>
+    <div class="digit">67
+      <span>Total Branches</span>
+    </div>
+  </div>
+</div>
+<div class="container6">
+  <span class="subheading">
+    "TESTIMONIAL"
+  </span>
+  <h2 style="font-weight: bold; font-size: 3.7rem;">Happy Clients</h2>
+  <div class="carousel" data-flickity='{ "groupCells": true }'>
+    <div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+        <img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+        <p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <div class="happy1" style="width: 30%;  margin-top: 15%;">
+          <img src="./girl.jpg" alt="girl" style="height: 9rem; width: 9rem; border-radius: 50%;">
+        </div>      
+        <div class="happy2" style=" margin-left: 40%;
+        margin-top: -20%;">
+          <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+          <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
         </div>
     </div>
-    <script src="index.js"></script>
-</body>
+    <div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+      <img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+      <p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      <div class="happy1" style="width: 30%;  margin-top: 15%;">
+        <img src="./girl1.jpg" alt="girl" style="height: 9rem; width: 9rem; border-radius: 50%;">
+      </div>      
+      <div class="happy2" style=" margin-left: 40%;
+      margin-top: -20%;">
+        <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+        <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
+      </div>
+  </div>
+  <div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+    <img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+    <p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <div class="happy1" style="width: 30%;  margin-top: 15%;">
+      <img src="./boy.jpg" alt="girl" style="height: 9rem; width: 9rem; border-radius: 50%;">
+    </div>      
+    <div class="happy2" style=" margin-left: 40%;
+    margin-top: -20%;">
+      <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+      <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
+    </div>
+</div>
+<div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+  <img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+  <p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+  <div class="happy1" style="width: 30%;  margin-top: 15%;">
+    <img src="./girl2.jpg" alt="girl" style="height: 9rem; width: 9rem; border-radius: 50%;">
+  </div>      
+  <div class="happy2" style=" margin-left: 40%;
+  margin-top: -20%;">
+    <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+    <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
+  </div>
+</div>
+<div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+<img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+<p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+<div class="happy1" style="width: 30%;  margin-top: 15%;">
+  <img src="./girl3.jpg" alt="girl" style="height: 9rem; width: 9rem; border-radius: 50%;">
+</div>      
+<div class="happy2" style=" margin-left: 40%;
+margin-top: -20%;">
+  <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+  <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
+</div>
+</div>
+<div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+<img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+<p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+<div class="happy1" style="width: 30%;  margin-top: 15%;">
+  <img src="./girl4.jpg" alt="girl" style="height: 9rem; width: 9rem; border-radius: 50%;">
+</div>      
+<div class="happy2" style=" margin-left: 40%;
+margin-top: -20%;">
+  <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+  <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
+</div>
+</div>
+<div class="carousel-cell" style="width: 30%; height: 30rem; background-color: lavender; padding: 1.5rem; margin: 2.1rem;">
+<img src="./quote.png" alt="quote" style="height: 2.5rem; width: 2.5rem; margin-left: -0.2rem; margin-top: -5rem;">
+<p style="color: grey; font-size: 1.8rem;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+<div class="happy1" style="width: 30%;  margin-top: 15%;">
+  <img src="./boy2.jpg" alt="girl" style="height: 90px; width: 90px; border-radius: 50%;">
+</div>      
+<div class="happy2" style=" margin-left: 40%;
+margin-top: -20%;">
+  <h5 style="font-size: 1.9rem;">Roger Scott</h5>
+  <p style="color: grey; font-size: 1.2rem;">Marketing Maneger</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="container7">
+  <div class="list">
+  <div class="details">
+    <h3>BHK Reality</h3>
+    <p>Far far away, behind the word mountains, far from the countries.</p>
+    <a href="www.twitter.com" target="_blank">
+      <i class="fa fa-twitter w3-hover-opacity" style="height: 3rem; width: 3rem;"></i>
+      <!-- <img src="./twitter.png" alt="tweet" style="height: 30px; width: 30px;"> -->
+    </a>
+    <a href="www.facebook.com" target="_blank">
+      <i class="fa fa-facebook-official w3-hover-opacity" style="height: 3rem; width: 3rem;"></i>
+      <!-- <img src="./facebook1.png" alt="fb" style="height: 30px; width: 30px;"> -->
+    </a>
+    <a href="www.instagram.com" target="_blank">
+      <i class="fa fa-instagram w3-hover-opacity" style="height: 3rem; width: 3rem;"></i>
+      <!-- <img src="./instag.png" alt="insta" style="height: 30px; width: 30px;"> -->
+    </a>
+  </div>
+  <div class="details">
+    <h3>Community</h3>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Search Properties</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">For Agents</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Reviews</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">FAQs</span>
+  </div>
+  <div class="details">
+    <h3>About Us</h3>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Our Stories</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Meet The Team</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Careers</span> <br>
+  </div>
+  <div class="details">
+    <h3>Company</h3>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">About Us</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Press</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Contact</span> <br>
+    <img src="./arrows.png" alt="arrow" style="height: 2rem; width: 2rem;">
+    <span class="com">Careers</span>
+  </div>
+  <div class="details">
+    <h3>Have A Question?</h3>
+    <img src="./address.png" alt="address" style="height: 2rem; width: 2rem;">
+    <span class="com">203 Fake St. Mountain  View, San Francisco, California, USA</span> <br>
+    <!-- <img src="./call.png" alt="call" style="height: 2rem; width: 2rem;"> -->
+    <i class="fa fa-phone" aria-hidden="true"></i>
+    <!-- <i class="fad fa-phone-square-alt"></i> -->
+    <span class="com">	+2 392 3929 210
+    </span> <br>
+    <img src="./mail.png" alt="email" style="height: 2rem; width: 2rem;">
+    <span class="com">info@yourdomain.com</span> <br>
+  </div>
+</div>
+</div>
+<footer>
+  <p class="footerP">Copyright 2022 All rights reserved | Made with <span><img src="./heart.png" alt="heart" style="height: 2rem; width: 2rem;">
+  </span> in 
+  <span style="color: green; font-size: 1.6rem; font-weight: bold;">India</span>
+  </p>
+</footer>
+
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </body>
 </html>
